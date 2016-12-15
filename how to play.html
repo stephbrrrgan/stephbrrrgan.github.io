@@ -1,0 +1,538 @@
+<!DOCTYPE>
+<html>
+<style>
+@font-face { 
+  font-family: "Verdana"; 
+} 
+
+@font-face { 
+  font-family: "Verdana"; 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background-image: url(https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/15284985_1292338664121477_6600107118122247204_n.jpg?oh=2cf3c09fbed6bc7648bd1d16d961de54&oe=58B6D682);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+     background-size: 1350px 750px;
+  color: #DDD;
+}
+
+p { 
+  padding: 10 10 20px 10;
+  line-height: 1.7em;
+  font-size: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #e6ffff;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+  font-size: 250%;
+}
+
+h1 {
+  font-size: 200%;
+}
+h1, h2, h3 { 
+  font: normal 140% arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #e6ffff;
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #000033;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #000033;
+  padding: 0 0 5px 0;
+  font: normal 150% 'Verdana', arial, sans-serif;
+}
+
+h5, h6 { 
+  color: #000033;
+  font: italic 95% arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: underline;
+  color: #09D4FF;
+}
+
+a:hover { 
+  text-decoration: none;
+}
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 2px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, nav, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main {
+  margin: 50px auto;
+  width: 980px;
+  padding-bottom: 30px;
+}
+
+header { 
+  background: transparent;
+  height: 225px;
+}
+
+#logo { 
+  width: 330px;
+  float: left;
+  height: 100px;
+  color: #888;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#logo h1, #logo h2 { 
+  font: normal 320% 'Verdana', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 0;
+  color: #ffffe6;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+}
+
+#logo_text h1 a .logo_colour { 
+  color: #ffffe6;
+  text-shadow: 2px 2px black;
+}
+
+#logo_text a:hover .logo_colour { 
+  color: #FFF;
+}
+
+#logo_text h2 { 
+  font-size: 140%;
+  padding: 0 0 0 0;
+  color: #99bbff;
+  text-shadow: 2px 2px black;
+}
+
+nav { 
+  float: left;
+  height: 44px;
+  width: 980px;
+  margin: 0 auto 0 auto;
+  color: #000033;
+  background-color: rgba(0, 0, 26, 0.8);
+} 
+
+#menu_container { 
+  width: 980px;
+  margin: 0 auto 0 auto;
+}
+
+#site_content { 
+  width: 930px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 25px;
+  background-color: rgba(0, 0, 26, 0.8);
+} 
+
+footer { 
+  width: 980px;
+  font: 170% 'Verdana', arial, sans-serif;
+  text-shadow: 1px 1px #000;
+  height: 30px;
+  padding: 5px 0 20px 0;
+  text-align: center; 
+  color: #FFF;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 26, 0.8); /* <-- this line is modified */
+}
+
+.content {
+  background-color: rgba(0, 0, 26, 0.8);
+  padding: 14px 0 0 0;
+}
+
+footer p { 
+  line-height: 1.7em;
+  padding: 0 0 5px 0;
+  font-size: 50%;
+}
+
+footer a { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td { 
+  background: #70D4E6;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #D3F2F7;
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}
+
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 200px;
+}
+
+html body ul.sf-menu ul ul { 
+  margin: 0 0 0 200px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 10;
+  top: 20px;
+  background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav { 
+  float: right;
+}
+
+ul#nav ul { 
+  background: #0DBBD5;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:7px 20px 6px 20px;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  text-shadow: 1px 1px #000;
+  text-decoration: none;
+  color: #FFF;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color: #ffff33;
+  text-shadow: none;
+}
+
+ul#nav ul li a:hover,ul#nav ul li a:focus { 
+  color: #222;
+  text-shadow: none;
+}
+
+img {
+    border-radius: 8px;
+}
+
+#chaserpic {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 75%;
+}
+#beaterpic {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 100%;
+}
+#keeperpic {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 75%;
+}
+#seekerpic {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 75%;
+}
+#snitchpic {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height:75%;
+}
+p {
+  font-family: "Verdana";
+  text-align: left;
+  font-size: 120%;
+}
+#Positions {
+  text-align: center;
+  padding: 10 10 20px 10;
+  font-size: 200%;
+
+}
+#positionlist {
+  font-family: "Verdana";
+  padding: 10 10 20px 10;
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+
+#sexy {
+  font-size: 140%;
+  color: white;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+}
+
+.video {
+  align-content: center;
+}
+</style>
+
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Quidditch Club of Pittsburgh</a></h1>
+          <h2 id="sexy">The sexiest team in Quidditch.</h2>
+        </div>
+      </div>
+      <nav id="navbar">
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how to play.html">How To Play</a></li>
+            <li><a href="meet the team new.html">Meet the Team</a></li>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+        <p id="intro">
+Real-life Quidditch and the Quidditch you know from the <i>Harry Potter</i> series are very similar with only a few exceptions. Unlike the books and movies, players in real life actually do not fly. Also, the snitch in this version of Quidditch is a person and not a ball with wings. Let us break it down for you. </p>
+<iframe width="980" height="562" style="float:center" src="https://www.youtube.com/embed/taDda9lLaEw" frameborder="0" allowfullscreen></iframe>
+<h1 id="Positions">&#9889 Positions &#9889</h1>
+<p>Six players from each team are on the field at a time, plus one more later on in the game. These are the positions: </p>
+<ul id="positionlist">
+<li> <a href="#chaser">Chasers</a> </li>
+<li> <a href="#beater">Beaters</a> </li>
+<li> <a href="#keeper">Keepers</a> </li>
+<li> <a href="#seekerh">Seeker</a> </li>
+<li> <a href="#snitchh">Snitch</a> </li>
+</ul>
+<h2 id="chaser"> &#9889 Chasers &#9889</h2>
+<p id="chasers">There are three chasers on the field at a single time; usually one girl and two guys. These players where white headbands to differentiate themselves, and the goal of the chasers is to score points by throwing the quaffle into one of three hoops located on the opposite side of the field. <a href="#navbar">Back to top.</a> </p>
+<img id="chaserpic" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12208620_901772983238976_9112227604073668721_n.jpg?oh=0fd3a346a97bc71008d79ea9ae48270c&oe=58B7717A" alt="chasers" width="1000" height="500"><br>
+<h2 id="beater"> &#9889 Beaters &#9889</h2>
+<p id="beaters">During a game there are two beaters on the field. The beaters, usually one guy and one girl, wear black headbands, and their goal is to defend and knock-out the opposition. Beaters use dodgeballs called "bludgers" to hit people in order for them to be out of the play. In every game there are a total of four beaters (two from each team) but only three bludgers, so this adds another element because you want to be the team with two bludgers as opposed to one. <a href="#navbar">Back to top.</a></p>
+<img id= "beaterpic" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12208325_901773193238955_5486204435496601201_n.jpg?oh=3033335d1d148b261dc44026d02c3e2a&oe=58E286F2" alt="beaters" width="500" height="331"><br>
+<h2 id="keeper"> &#9889 Keeper &#9889</h2>
+<p id="keeper">There is only one keeper on each team, and he/she wears a green headband. They are essentially another chaser, but they also have to guard their team's three hopes in order to stop the opposing team from scoring. <a href="#navbar">Back to top.</a> </p>
+<img id="keeperpic" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/11012447_901774703238804_4608635297813698537_n.jpg?oh=3f7fad12f96b0683e343c67773acef13&oe=58E587C5" alt="keeper" width="634" height="420"><br>
+<h2 id="seekerh"> &#9889 Seeker &#9889</h2>
+<p id="seeker">The seeker on each team doesn't actually play until around 18 minutes into the game. They come out once the snitch is released. The seekers where yellow headbands, and their goal is to 
+"catch" the snitch. Once they do that, the game is over and they have earned their team another 30 points. <a href="#navbar">Back to top.</a> </p>
+<img id="seekerpic" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12065832_901773963238878_1330858625162952369_n.jpg?oh=adf9e547230868507268bd9714471000&oe=58E92B1B" alt="seeker" width="634" height="355"><br>
+<h2 id="snitchh">&#9889 Snitch &#9889</h2>
+<p id="snitch"> The snitch isn't like the snitch from the books and movies. Instead, it's another player from a different third team who wears shorts with a sock attatched to it. It almost looks like the flags from flag-football. The snitch runs around the field and attempts to fight off the seekers as long as possible. <a href="#navbar">Back to top.</a> </p>
+<img id="snitchpic" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/10561808_10152903500182054_2977494490630305588_n.jpg?oh=000f96479a292d66bc55cdfea8f4c8f0&oe=58AEAF7B" alt="snitch" width="600" height="279"><br>
+
+<div class="w3-container w3-ffd663">
+<p> All photos are from QC Pitt. </p>
+      </div>
+    </div>
+    <footer>
+      <p class="copyright">Copyright &copy; scenic_photo_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>

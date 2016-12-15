@@ -1,0 +1,544 @@
+<!DOCTYPE>
+<html>
+<style>
+@font-face { 
+  font-family: "Verdana"; 
+} 
+
+@font-face { 
+  font-family: "Verdana"; 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background-image: url(https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/15284985_1292338664121477_6600107118122247204_n.jpg?oh=2cf3c09fbed6bc7648bd1d16d961de54&oe=58B6D682);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+     background-size: 1350px 750px;
+  color: #DDD;
+}
+
+p { 
+  padding: 10 10 20px 10;
+  line-height: 1.7em;
+  font-size: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: white;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+  font-size: 250%;
+}
+
+h1 {
+  font-size: 200%;
+}
+h1, h2, h3 { 
+  font: normal 140% arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: white;
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #000033;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #000033;
+  padding: 0 0 5px 0;
+  font: normal 150% 'Verdana', arial, sans-serif;
+}
+
+h5, h6 { 
+  color: #000033;
+  font: italic 95% arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: underline;
+  color: #09D4FF;
+}
+
+a:hover { 
+  text-decoration: none;
+}
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 2px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, nav, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main {
+  margin: 50px auto;
+  width: 980px;
+  padding-bottom: 30px;
+}
+
+header { 
+  background: transparent;
+  height: 225px;
+}
+
+#logo { 
+  width: 330px;
+  float: left;
+  height: 100px;
+  color: #888;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#logo h1, #logo h2 { 
+  font: normal 320% 'Verdana', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 0;
+  color: #ffffe6;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+}
+
+#logo_text h1 a .logo_colour { 
+  color: #ffffe6;
+  text-shadow: 2px 2px black;
+}
+
+#logo_text a:hover .logo_colour { 
+  color: #FFF;
+}
+
+#logo_text h2 { 
+  font-size: 140%;
+  padding: 0 0 0 0;
+  color: #99bbff;
+  text-shadow: 2px 2px black;
+}
+
+
+nav { 
+  float: left;
+  height: 44px;
+  width: 980px;
+  margin: 0 auto 0 auto;
+  color: #000033;
+  background-color: rgba(0, 0, 26, 0.8);
+} 
+
+#menu_container { 
+  width: 980px;
+  margin: 0 auto 0 auto;
+}
+
+#site_content { 
+  width: 930px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 25px;
+  background-color: rgba(0, 0, 26, 0.8);
+} 
+
+footer { 
+  width: 980px;
+  font: 170% 'Verdana', arial, sans-serif;
+  text-shadow: 1px 1px #000;
+  height: 30px;
+  padding: 5px 0 20px 0;
+  text-align: center; 
+  color: #FFF;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 26, 0.8); /* <-- this line is modified */
+}
+
+.content {
+  background-color: rgba(0, 0, 26, 0.8);
+  padding: 14px 0 0 0;
+}
+
+footer p { 
+  line-height: 1.7em;
+  padding: 0 0 5px 0;
+  font-size: 50%;
+}
+
+footer a { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.form_settings { 
+  margin: 15px 0 0 0;
+}
+
+.form_settings p { 
+  padding: 0 0 4px 0;
+}
+
+.form_settings span { 
+  float: left; 
+  width: 200px; 
+  text-align: left;
+}
+  
+.form_settings input, .form_settings textarea { 
+  padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #C6E7F0; 
+  background: #EFF8FB; 
+  color: #47433F;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+  
+.form_settings .submit { 
+  font: 140% 'Verdana', arial, sans-serif; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #1EC9F4; 
+  -webkit-border-radius: .5em .5em .5em .5em ; 
+  -moz-border-radius: .5em .5em .5em .5em ;
+  border-radius: .5em .5em .5em .5em ;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);  
+  color: #FFF;
+  border: solid 1px #0D8AA9;
+  background: #46C4DD;
+  background: -webkit-gradient(linear, left top, left bottom, from(#63CFDF), to(#17B2D9));
+  background: -moz-linear-gradient(top,  #63CFDF,  #17B2D9);
+  text-shadow: 1px 1px #178497;
+}
+
+.form_settings textarea, .form_settings select { 
+  font: 100% arial; 
+  width: 299px;
+}
+
+.form_settings select { 
+  width: 310px;
+}
+
+.form_settings .checkbox { 
+  margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+#meet {
+  color: white;
+}
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td { 
+  background: #70D4E6;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #D3F2F7;
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}
+
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 200px;
+}
+
+html body ul.sf-menu ul ul { 
+  margin: 0 0 0 200px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 10;
+  top: 20px;
+  background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav { 
+  float: right;
+}
+
+ul#nav ul { 
+  background: #0DBBD5;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:7px 20px 6px 20px;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  text-shadow: 1px 1px #000;
+  text-decoration: none;
+  color: #FFF;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color: #ffff33;
+  text-shadow: none;
+}
+
+ul#nav ul li a:hover,ul#nav ul li a:focus { 
+  color: #222;
+  text-shadow: none;
+}
+.mySlides {display:none;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Quidditch Club of Pittsburgh</a></h1>
+          <h2>The sexiest team in Quidditch.</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="how to play.html">How To Play</a></li>
+            <li><a href="meet the team new.html">Meet the Team</a></li>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+<div class="w3-content w3-section" style="max-width:500px center">
+<img class="mySlides" src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/15284985_1292338664121477_6600107118122247204_n.jpg?oh=2cf3c09fbed6bc7648bd1d16d961de54&oe=58B6D682" style="width:100%">
+<img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/14657489_1308831579147672_4815993871151272486_n.jpg?oh=a481b24df7a678dca6d8670f61f69e6b&oe=58FAA57B" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12195909_901773523238922_3910527790327932237_n.jpg?oh=7163cbd95704d5e537aae560f8e5f6a4&oe=58B79297" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/1797591_763120077093656_1826447272162861446_n.jpg?oh=35a3c8f880b5197ddc1905111ec8a702&oe=58B00702" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/1782095_693087720790055_7589317976163392734_n.jpg?oh=36e04fa519668529361c2136bca9b465&oe=58E599C9" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/11012460_901774819905459_9036436890600768983_n.jpg?oh=22e0fa7213779b306e0dec91b27d7251&oe=58E2F587" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12243065_1716745968613951_5787254099333700815_n.jpg?oh=3a31120d26741c3ab251b1ff08641401&oe=58F0621E" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12208704_10207796507852915_7589958387799712664_n.jpg?oh=65042801707956f8c918ddd4588b3038&oe=58EC24D3" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12191623_10207796506452880_7240399234586472184_n.jpg?oh=474a36bea8b1d4feeef47b660a5ed191&oe=58E6ABA5" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12002154_901774656572142_211130657025542211_n.jpg?oh=d4426e927d3c6e4098c65c20774462b1&oe=58B535B0" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12196202_901772856572322_9091765490405119641_n.jpg?oh=3a0933ca080d898baf0fbdd72156dcbe&oe=58E36952" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12193443_901772909905650_173649170862975340_n.jpg?oh=8f8f991155f95a890ca9e23013bceced&oe=58E3497F" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12187834_901773239905617_2261026485232709394_n.jpg?oh=44113632971c9ccf4f43e778b0ed7f61&oe=58ECF383" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12105988_901773279905613_2461851592714892126_n.jpg?oh=2dbb49d8004b4e8beb68753da7c3bc25&oe=58EA55B7" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/13880423_10209991493926195_2653775311296456929_n.jpg?oh=1417f3b1f56292c06feef65d6208c3b7&oe=58F31FDF" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12107811_10207796505012844_8907961292993034769_n.jpg?oh=4b6d750293fefcf4ce258e7661aaa956&oe=58FC0310" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12189066_901774036572204_2551854901354393023_n.jpg?oh=0597750fbf3ae5d6807d9c24cf052634&oe=58F397CE" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12112260_10207712632956095_3931379810612994574_n.jpg?oh=ad3cb9634d7819b7918e32f90790956a&oe=58EFB0B0" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/1622750_763120117093652_8602418279953465007_n.jpg?oh=9de245c5a9818b1d932cbafcab0a6710&oe=58B63435" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/12190124_1920428068181477_4901493796845325633_n.jpg?oh=827270165c759e7bc80d7beaf04ef522&oe=58B8907E" style="width:100%">
+  <img class="mySlides" src="https://scontent.fagc1-2.fna.fbcdn.net/v/t1.0-9/10419963_10152859995799766_3151674013936134274_n.jpg?oh=bd2fbfd2bfdea51b519a3ebe3ed655cc&oe=58B9F043" style="width:100%">
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    <footer>
+      <p>Copyright &copy; scenic_photo_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+
+</body>
+</html>
